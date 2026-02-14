@@ -204,8 +204,8 @@ function key2() {
             cd
             git clone https://github.com/svpn1/ijinvps >/dev/null 2>&1
             cd izinvps2
-            sed -i "/# VIP/a ### ${author} ${hhari2} ${MYIP2} ON 10 @VIP" /root/izinvps2/ipx
-            sed -i "/# SSHWS/a ### ${author} ${hhari2} ${MYIP2} ON SSHWS @VIP" /root/izinvps2/ip
+            sed -i "/# VIP/a ### ${author} ${hhari2} ${MYIP2} ON 10 @VIP" /root/izinvps/ipx
+            sed -i "/# SSHWS/a ### ${author} ${hhari2} ${MYIP2} ON SSHWS @VIP" /root/izinvps/ip
 
             sleep 0.5
 
