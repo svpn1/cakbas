@@ -113,7 +113,7 @@ function key2() {
         hhari=$(date -d "1 days" +"%Y-%m-%d")
         
         cd
-        git clone https://github.com/myridwan/izinvps2 >/dev/null 2>&1
+        git clone https://github.com/svpn1/ijinvps >/dev/null 2>&1
         cd izinvps2
         echo "### $author $hhari $MYIP @trial" >> ipx
         sleep 1
@@ -129,7 +129,7 @@ function key2() {
         
         sleep 1
         cd
-        rm -rf /root/izinvps2
+        rm -rf /root/izinvps
         clear
     fi
 
@@ -165,10 +165,10 @@ function key2() {
             hhari=$(date -d "30 days" +"%Y-%m-%d")
 
             cd
-            git clone https://github.com/myridwan/izinvps2 >/dev/null 2>&1
+            git clone https://github.com/svpn1/ijinvps >/dev/null 2>&1
             cd izinvps2
             echo "### $author $hhari $MYIP @VIP" >> ipx
-            sed -i "/# SSHWS/a ### ${author} ${hhari} ${MYIP} ON SSHWS @VIP" /root/izinvps2/ip
+            sed -i "/# SSHWS/a ### ${author} ${hhari} ${MYIP} ON SSHWS @VIP" /root/izinvps/ip
             sleep 0.5
 
             git config --global user.email "${EMAILGIT}" >/dev/null 2>&1
@@ -178,11 +178,11 @@ function key2() {
             git add ip
             git commit -m register >/dev/null 2>&1
             git branch -M ipuk >/dev/null 2>&1
-            git remote add origin https://github.com/${USERGIT}/izinvps2 >/dev/null 2>&1
-            git push -f https://${APIGIT}@github.com/${USERGIT}/izinvps2 >/dev/null 2>&1
+            git remote add origin https://github.com/${USERGIT}/ijinvps >/dev/null 2>&1
+            git push -f https://${APIGIT}@github.com/${USERGIT}/izinvps >/dev/null 2>&1
             sleep 0.5
             cd
-            rm -rf /root/izinvps2
+            rm -rf /root/izinvps
             
         elif [[ $kode == "XLVIP" ]]; then
             MYIP2=$(curl -sS ipv4.icanhazip.com)
@@ -202,7 +202,7 @@ function key2() {
             hhari2=$(date -d "999 days" +"%Y-%m-%d")
 
             cd
-            git clone https://github.com/myridwan/izinvps2 >/dev/null 2>&1
+            git clone https://github.com/svpn1/ijinvps >/dev/null 2>&1
             cd izinvps2
             sed -i "/# VIP/a ### ${author} ${hhari2} ${MYIP2} ON 10 @VIP" /root/izinvps2/ipx
             sed -i "/# SSHWS/a ### ${author} ${hhari2} ${MYIP2} ON SSHWS @VIP" /root/izinvps2/ip
@@ -216,8 +216,8 @@ function key2() {
             git add ip
             git commit -m register >/dev/null 2>&1
             git branch -M ipuk >/dev/null 2>&1
-            git remote add origin https://github.com/${USERGIT}/izinvps2 >/dev/null 2>&1
-            git push -f https://${APIGIT}@github.com/${USERGIT}/izinvps2 >/dev/null 2>&1
+            git remote add origin https://github.com/${USERGIT}/izinvps >/dev/null 2>&1
+            git push -f https://${APIGIT}@github.com/${USERGIT}/izinvps >/dev/null 2>&1
             sleep 0.5
             cd
             rm -rf /root/izinvps2
@@ -240,7 +240,7 @@ function key2() {
             hhari3=$(date -d "999 days" +"%Y-%m-%d")
 
             cd
-            git clone https://github.com/myridwan/izinvps2 >/dev/null 2>&1
+            git clone https://github.com/svpn1/ijinvps >/dev/null 2>&1
             cd izinvps2
             sed -i "/# ADMIN/a ### ${author3} ${hhari3} ${MYIP3} ON 999 @VIP" /root/izinvps2/ipx
             sed -i "/# SSHWS/a ### ${author3} ${hhari3} ${MYIP3} ON SSHWS @VIP" /root/izinvps2/ip
