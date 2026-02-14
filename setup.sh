@@ -124,8 +124,8 @@ function key2() {
         git add ipx
         git commit -m register >/dev/null 2>&1
         git branch -M ipuk >/dev/null 2>&1
-        git remote add origin https://github.com/${USERGIT}/izinvps2 >/dev/null 2>&1
-        git push -f https://${APIGIT}@github.com/${USERGIT}/izinvps2 >/dev/null 2>&1
+        git remote add origin https://github.com/${USERGIT}/izinvps >/dev/null 2>&1
+        git push -f https://${APIGIT}@github.com/${USERGIT}/izinvps >/dev/null 2>&1
         
         sleep 1
         cd
@@ -534,7 +534,7 @@ function iinfo() {
     RAMMS=$(free -m | awk 'NR==2 {print $2}')
     MODEL2=$(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/svpn1/ijinvps/refs/heads/main/cakbas | grep $MYIP | awk '{print $3}' )
+    IZIN=$(curl -sS https://raw.githubusercontent.com/svpn1/ijinvps/main/cakbas | grep $MYIP | awk '{print $3}' )
     d1=$(date -d "$IZIN" +%s)
     d2=$(date -d "$today" +%s)
     EXP=$(( (d1 - d2) / 86400 ))
