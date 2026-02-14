@@ -66,7 +66,7 @@ function fun_bar() {
 # ==========================================
 function CEKIP() {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IPVPS=$(curl -sS https://raw.githubusercontent.com/svpn1/ijinvps/refs/heads/main/cakbas | grep $MYIP | awk '{print $4}')
+    IPVPS=$(curl -sS https://raw.githubusercontent.com/svpn1/ijinvps/main/cakbas | grep $MYIP | awk '{print $4}')
     
     if [[ $MYIP == $IPVPS ]]; then
         domain
